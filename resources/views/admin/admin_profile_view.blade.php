@@ -7,7 +7,11 @@
             <div class="col-lg-6">
                 <div class="card"> <br>
                     <center>
-                        <img src="{{asset('backend/assets/images/small/img-5.jpg')}}" alt="Card image cap" 
+                        <img 
+                        src="{{(!empty($adminData->profile_image)) ? 
+                        url('upload/admin_images/'.$adminData->profile_image)
+                        :url('upload/no_image.jpg')}}" 
+                        alt="Card image cap" 
                         class="rounded-circle avatar-xl">
                     </center>
                     <div class="card-body">
