@@ -1,5 +1,9 @@
 @extends('frontend.main_master')
 @section('main')
+
+@section('title')
+Blog | KırcaLearning Website
+@section()
 <main>
 
     <!-- breadcrumb-area -->
